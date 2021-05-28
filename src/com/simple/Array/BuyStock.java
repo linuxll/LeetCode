@@ -25,5 +25,5 @@ public class BuyStock {
     /**
      * 单调栈法
      */
-
+        
 }
