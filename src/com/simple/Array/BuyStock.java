@@ -23,7 +23,23 @@ public class BuyStock {
     }
 
     /**
-     * 单调栈法
+     * 学习动态规划后的解答
+     * @param prices
+     * @return
      */
-        
+    public int sol(int[] prices){
+        int ans=0;
+        int buy=prices[0];
+        for(int i=1;i<prices.length;i++){
+            if(buy>prices[i]){
+                buy=prices[i];
+            }else {
+                if(ans<prices[i]-buy){
+                    ans=prices[i]-buy;
+                }
+            }
+
+        }
+        return ans;
+    }
 }

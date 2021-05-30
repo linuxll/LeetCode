@@ -1,5 +1,6 @@
 package com.medium.List;
 
+
 public class ListNode {
     int val;
     ListNode next;
